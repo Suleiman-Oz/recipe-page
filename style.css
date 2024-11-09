@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  --pri-white: hsl(0, 0%, 100%);
+  --pri-stone-100: hsl(30, 54%, 90%);
+  --pri-stone-150: hsl(30, 18%, 87%);
+  --pri-stone-600: hsl(30, 10%, 34%);
+  --pri-stone-900: hsl(24, 5%, 18%);
+  --sec-brown-800: hsl(14, 45%, 36%);
+  --third-rose-800: hsl(332, 51%, 32%);
+  --third-rose-50: hsl(330, 100%, 98%);
+}
+body {
+  background-color: var(--third-rose-50);
+}
+li {
+  font-weight: 600;
+  color: var(--sec-brown-800);
+}
+p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0 10px;
+  font-weight: 400;
+  color: var(--pri-stone-600);
+}
+.hr {
+  width: 90%;
+  margin: 35px auto;
+  height: 1px;
+  background-color: var(--pri-stone-150);
+}
+.recipe-page {
+  width: 325px;
+  margin: auto;
+  background-color: var(--pri-white);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Outfit", sans-serif ;
+  padding-bottom: 25px;
+}
+img {
+  width: 325px;
+  padding: 0;
+  margin: 0;
+}
+.simple-oml {
+  margin: 13px;
+}
+h1 {
+  margin-left: 10px;
+}
+h2 {
+  color: var(--sec-brown-800);
+  margin-left: 13px;
+}
+h3 {
+  color: var(--third-rose-800);
+  margin-left: 13px;
+}
+.prep-time {
+  background-color: var(--third-rose-50);
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin: 13px;
+}
+.prep-time li {
+  color: var(--third-rose-800);
+  font-size: 11px;
+}
+.ingredient li {
+  font-size: 11px;
+}
+span {
+  font-weight: 700;
+  padding-right: 3px;
+}
+.ingredient,
+.instruction,
+.nutrition {
+  margin: 13px;
+}
+.instruction span {
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  padding: 20px 30px;
+}
+tr {
+  border-bottom: 1px solid var(--pri-stone-150);
+}
+tr:last-child {
+  border-bottom: none;
+}
+#table-head {
+  font-weight: 400;
+  padding-left: 15px;
+}
+.price {
+  color: var(--sec-brown-800);
+  font-weight: 700;
+}
+@media (min-width: 375px) and (max-width: 1440px) {
+  img {
+    width: 560px;
+    margin: 0 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  .recipe-page {
+    width: 620px;
+    border-radius: 10px;
+    margin: 100px auto;
+  }
+  .simple-oml {
+    margin-left: 25px;
+  }
+  .prep-time {
+    margin: 25px 0;
+    margin-left: 25px;
+    width: 520px;
+  }
+  .ingredient,
+  .instruction,
+  .nutrition,
+  h2 {
+    margin-left: 20px;
+  }
+  th {
+    text-align: left;
+  }
+  #table-head {
+    padding-left: 20px;
+  }
+}

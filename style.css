@@ -96,7 +96,7 @@ tr {
 tr:last-child {
   border-bottom: none;
 }
-#table-head {
+.table-head {
   font-weight: 400;
   padding-left: 15px;
 }
@@ -133,7 +133,7 @@ tr:last-child {
   th {
     text-align: left;
   }
-  #table-head {
+  .table-head {
     padding-left: 20px;
   }
 }
